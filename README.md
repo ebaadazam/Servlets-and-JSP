@@ -11,11 +11,12 @@ Servlets and JavaServer Pages (JSP) are both Java technologies used for building
 <b>How They Work</b> - A JSP page is essentially a web page with traditional markup (like HTML) and embedded Java code. The Java code is processed on the server, and it can dynamically generate content before the page is returned to the client's browser.<br>
 <b>Use Cases</b> - JSP is typically used for presenting dynamic content and views. It can incorporate JavaBeans or custom tags to encapsulate complex logic, keeping the presentation layer separate from business logic.<br>
 <b>Advantages</b> - Easier to write and maintain than servlets for pages where there's a lot of presentation logic. JSP allows web designers and developers to work together more effectively by separating the presentation layer from business logic.
-Integration of Servlets and JSP<br>
+Integration of Servlets and JSP<br><br>
+
 In a robust web application, it's common to use both servlets and JSP, leveraging the strengths of each:
 
-Servlets handle business logic: The servlet takes requests from the client, performs the necessary processing (like talking to a database), and populates data objects (like JavaBeans).<br>
-JSP for presentation: Once the servlet has completed its processing, it forwards the request to a JSP page. The JSP page uses the JavaBeans set by the servlet to dynamically generate HTML and present the data.<br>
+Servlets handle business logic: The servlet takes requests from the client, performs the necessary processing (like talking to a database), and populates data objects (like JavaBeans).<br><br>
+JSP for presentation: Once the servlet has completed its processing, it forwards the request to a JSP page. The JSP page uses the JavaBeans set by the servlet to dynamically generate HTML and present the data.<br><br>
 This separation of concerns (business logic in servlets, presentation in JSP) not only adheres to good software engineering practices (like MVC architecture) but also makes the application easier to maintain and scale.<br>
 
 <b>Conclusion</b><br>
