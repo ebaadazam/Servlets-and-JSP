@@ -17,7 +17,7 @@ Integration of Servlets and JSP<br><br>
 
 <h4><b>1. Calling a Servlet from another Servlet</b></h4>
 There can be several ways to call a servlet from another servlet in Java, depending upon the specific requirements of your application and the behaviour you want to implement<br>
-The two main approaches are <b>Forwarding</b> and <b>Redirection</b> which can be done using <b>RequestDispatcher</b> interface for forwarding and <b>HttpServletResponse</b> Interface for redirection. The RequestDispatcher interface, provided by the Servlet API, allows you to forward a request from one servlet to another servlet or include the response from another servlet in the response of the current servlet.<br>
+The two main approaches are <b>Forwarding</b> and <b>Redirection</b> which can be done using <b>RequestDispatcher</b> interface for forwarding and <b>HttpServletResponse</b> Interface for redirection. The RequestDispatcher interface, provided by the Servlet API, allows you to forward a request from one servlet to another servlet or include the response from another servlet in the response of the current servlet.<br><br>
 
 <b>Using RequestDispatcher:</b> You can use the RequestDispatcher interface to forward a request from one servlet to another servlet or JSP. This is useful when you want the second servlet to process the request and generate the response, but the client is unaware of this redirection.<br>
 
@@ -27,7 +27,7 @@ The two main approaches are <b>Forwarding</b> and <b>Redirection</b> which can b
 
 
 <h4><b>2. Session Management</b></h4>
-Session management in Java web applications involves maintaining stateful information about user interactions across multiple requests. This is crucial for applications to remember user-specific data, such as login information, shopping cart contents, or user preferences. Java provides several mechanisms for session management, including:<br>
+Session management in Java web applications involves maintaining stateful information about user interactions across multiple requests. This is crucial for applications to remember user-specific data, such as login information, shopping cart contents, or user preferences. Java provides several mechanisms for session management, including:<br><br>
 
 <b>Session:</b> Java EE provides a session tracking API that allows developers to manage sessions programmatically. This API includes classes such as HttpSession and HttpServletRequest that can be used to create, retrieve, and invalidate sessions.<br>
 
