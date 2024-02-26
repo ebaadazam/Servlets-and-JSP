@@ -17,6 +17,12 @@ Integration of Servlets and JSP<br><br>
 
 <h4><b>1. Calling a Servlet from another Servlet</b></h4>
 There can be several ways to call a servlet from another servlet in Java, depending upon the specific requirements of your application and the behaviour you want to implement<br>
-The two main approaches are <b>Forwarding</b> and <b>Redirection</b> which can be done using <b>RequestDispatcher</b> interface for forwarding and <b>HttpServletResponse</b> Interface for redirection. The RequestDispatcher interface, provided by the Servlet API, allows you to forward a request from one servlet to another servlet or include the response from another servlet in the response of the current servlet.
+The two main approaches are <b>Forwarding</b> and <b>Redirection</b> which can be done using <b>RequestDispatcher</b> interface for forwarding and <b>HttpServletResponse</b> Interface for redirection. The RequestDispatcher interface, provided by the Servlet API, allows you to forward a request from one servlet to another servlet or include the response from another servlet in the response of the current servlet.<br>
+
+<b>Using RequestDispatcher:</b> You can use the RequestDispatcher interface to forward a request from one servlet to another servlet or JSP. This is useful when you want the second servlet to process the request and generate the response, but the client is unaware of this redirection.<br>
+
+<b>Using HttpServletResponse:</b> You can also use the HttpServletResponse object to send a redirect response to the client, asking it to make a new request to another servlet. This approach is useful when you want the client to be aware of the redirection.<br>
+
+<b>Using URL Patterns:</b> If the servlet you want to call is mapped to a URL pattern in the web.xml deployment descriptor or using annotations, you can directly call that URL from the first servlet.<br>
 
 
