@@ -6,7 +6,7 @@ Servlets and JavaServer Pages (JSP) are both Java technologies used for building
 <b>Use Cases</b> - Servlets are well-suited for handling complex processing, such as form data processing, database manipulation, and invoking other business logic.<br>
 <b>Advantages</b> - They are powerful for controlling the web page generation process and handling the business logic in a web application.<br><br>
 
-<h4><b>JavaServer Pages (JSP)</b></h4>
+<h4><b>JSP</b></h4>
 <b>Definition</b> - JSP is a technology that helps software developers create dynamically generated web pages based on HTML, XML, or other document types. Once the servlet has completed its processing, it forwards the request to a JSP page. The JSP page uses the JavaBeans set by the servlet to dynamically generate HTML and present the data. It allows Java code and certain predefined actions to be interleaved with static web markup content, with the resulting page being compiled and executed on the server to deliver an HTML or XML document to the client.<br>
 <b>How They Work</b> - A JSP page is essentially a web page with traditional markup (like HTML) and embedded Java code. The Java code is processed on the server, and it can dynamically generate content before the page is returned to the client's browser.<br>
 <b>Use Cases</b> - JSP is typically used for presenting dynamic content and views. It can incorporate JavaBeans or custom tags to encapsulate complex logic, keeping the presentation layer separate from business logic.<br>
