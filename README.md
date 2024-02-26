@@ -23,6 +23,16 @@ The two main approaches are <b>Forwarding</b> and <b>Redirection</b> which can b
 
 <b>Using HttpServletResponse:</b> You can also use the HttpServletResponse object to send a redirect response to the client, asking it to make a new request to another servlet. This approach is useful when you want the client to be aware of the redirection.<br>
 
-<b>Using URL Patterns:</b> If the servlet you want to call is mapped to a URL pattern in the web.xml deployment descriptor or using annotations, you can directly call that URL from the first servlet.<br>
+<b>Using URL Patterns:</b> If the servlet you want to call is mapped to a URL pattern in the web.xml deployment descriptor or using annotations, you can directly call that URL from the first servlet.<br><br>
+
+
+<h4><b>2. Session Management</b></h4>
+Session management in Java web applications involves maintaining stateful information about user interactions across multiple requests. This is crucial for applications to remember user-specific data, such as login information, shopping cart contents, or user preferences. Java provides several mechanisms for session management, including:<br>
+
+<b>Session:</b> Java EE provides a session tracking API that allows developers to manage sessions programmatically. This API includes classes such as HttpSession and HttpServletRequest that can be used to create, retrieve, and invalidate sessions.<br>
+
+<b>HTTP Cookies:</b> Cookies are small pieces of data stored on the client-side (browser) and sent to the server with each request. When a session is created, a cookie with the session ID is sent to the client. The browser then returns this cookie with subsequent requests, allowing the server to identify the session. In Java web applications, cookies can be used to store session IDs, which are used to identify and retrieve session data on the server. Servlets and JSP provide APIs for working with cookies.<br>
+
+<b>URL Rewriting:</b> URL rewriting involves appending session IDs to URLs as query parameters. This allows the server to track sessions without using cookies. This technique is used when cookies are disabled in the browser. However, this approach can expose session IDs in the URL, making them potentially vulnerable to being intercepted or tampered with. It is less secure than using cookies as the session ID can be exposeed in browser history<br>
 
 
