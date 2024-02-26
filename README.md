@@ -13,4 +13,7 @@ Servlets and JavaServer Pages (JSP) are both Java technologies used for building
 <b>Advantages</b> - Easier to write and maintain than servlets for pages where there's a lot of presentation logic. JSP allows web designers and developers to work together more effectively by separating the presentation layer from business logic.
 Integration of Servlets and JSP<br><br>
 
+<h4><b>Calling a Servlet from another Servlet</b></h4>
+To call a servlet from another servlet in Java, you can use the <b>RequestDispatcher</b> interface provided by the Servlet API. The RequestDispatcher interface allows you to forward a request from one servlet to another servlet or include the response from another servlet in the response of the current servlet. Refer to the file of RequestDispatcher for more understanding
+
 
