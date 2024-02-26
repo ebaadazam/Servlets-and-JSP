@@ -15,7 +15,7 @@ Integration of Servlets and JSP<br><br>
 
 <h4><b>Components of Servlet & JSP:- </b></h4>
 
-<h4><b>Calling a Servlet from another Servlet</b></h4>
+<h4><b>1. Calling a Servlet from another Servlet</b></h4>
 There can be several ways to call a servlet from another servlet in Java, depending upon the specific requirements of your application and the behaviour you want to implement<br>
 The two main approaches are <b>Forwarding</b> and <b>Redirection</b> which can be done using <b>RequestDispatcher</b> interface for forwarding and <b>HttpServletResponse</b> Interface for redirection. The RequestDispatcher interface, provided by the Servlet API, allows you to forward a request from one servlet to another servlet or include the response from another servlet in the response of the current servlet.
 
