@@ -1,5 +1,4 @@
-// This Servlet will add two numbers and forward the request to another Servlet for calculating its square using requestDispatcher()
-// This is a Java Class to calculate the square two numbers
+// This Servlet will calculate the Square of the resulted sum
 
 package com.ebaad.azam;
 
