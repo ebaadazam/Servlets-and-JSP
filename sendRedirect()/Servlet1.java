@@ -27,9 +27,9 @@ public class AddServletClass extends HttpServlet {
 		int k = i+j; //stores the sum of two numbers
 		
 		res.sendRedirect("sq?k=" + k);
-    // Above is the concept of URL Rewriting as we are changing the URL. This 
-    // comes under session management where we can transfer data from one Servlet
-    // to another with the help of three things- session, cookies and url rewriting
+		// Above is the concept of URL Rewriting as we are changing the URL. This 
+		// comes under session management where we can transfer data from one Servlet
+		// to another with the help of three things- session, cookies and url rewriting
 	}
 
 }
