@@ -1,4 +1,5 @@
-// This Servlet will add two numbers and forward the request to another Servlet for calculating its square using requestDispatcher()
+// This Servlet will add two numbers and redirect the request to another Servlet using sendRedirect() method for calculating its
+// square. It is also the concept of URL Rewriting
 // This is a Java Class to add two numbers
 
 package com.ebaad.azam;
