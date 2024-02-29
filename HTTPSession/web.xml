@@ -1,1 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" id="WebApp_ID" version="6.0">
+  // For the First Servlet i.e, AddServletClass
+  <servlet>
+  <servlet-name>Add</servlet-name>
+  <servlet-class>com.ebaad.azam.AddServletClass</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Add</servlet-name>
+  <url-pattern>/add</url-pattern>
+  </servlet-mapping>
 
+  // For the Second Servlet i.e, SquareServletClass
+  <servlet>
+  <servlet-name>Square</servlet-name>
+  <servlet-class>com.ebaad.azam.SquareServletClass</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Square</servlet-name>
+  <url-pattern>/sq</url-pattern>
+  </servlet-mapping>
+</web-app>
