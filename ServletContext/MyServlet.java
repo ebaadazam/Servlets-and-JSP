@@ -30,3 +30,5 @@ public class MyServlet extends HttpServlet {
     String str = ctx.getInitParameter("name");
 	}
 }
+
+// Output will be- Hello Ebaad
