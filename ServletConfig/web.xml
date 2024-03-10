@@ -1,1 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" id="WebApp_ID" version="5.0">
+  <display-name>Demo App</display-name>
+  
+  <servlet>
+	  <servlet-name>Context</servlet-name>
+	  <servlet-class>com.ebaad.azam.MyServlet</servlet-class>
 
+    <!--This is different in ServletConfig. The init-param is constructed separately for each servlet class-->
+    <init-param>
+      <param-name>name</param-name>
+      <param-value>Sarim</param-value>
+    </init-param>
+  </servlet>
+  
+  <servlet-mapping>
+	  <servlet-name>Context</servlet-name>
+	  <url-pattern>/home</url-pattern>
+  </servlet-mapping>
+  
+  <context-param>
+	  <param-name>name</param-name>
+	  <param-value>Ebaad</param-value>
+  </context-param>
+  
+  <context-param>
+	  <param-name>age</param-name>
+	  <param-value>21</param-value>
+  </context-param>
+</web-app>
