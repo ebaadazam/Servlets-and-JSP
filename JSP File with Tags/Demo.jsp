@@ -3,6 +3,9 @@
     
 <!-- Whatever we write within directive tags will directly go to the import package -->
 <%@ page import="java.util.ArrayList, java.util.Scanner, java.util.Iterator" %>
+
+<!-- using include directive, we can simply use the variables and the methods of some other jsp files into our current jsp file -->
+<%@ include file="sample.jsp" %>
     
 <!DOCTYPE html>
 <html>
