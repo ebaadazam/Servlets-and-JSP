@@ -1,7 +1,6 @@
 // This Servlet will fetch the value of the attributes specified in the web.xml file by using the object of the object of the 
 // ServletContext. We dont have to crerate the ServletContext object as it is provided by the Tomcat. The moment you run the
 // application, it will give you ServletContext Object and the way you can access it by saying getInitParameter(). 
-// This is a Java Class to add two numbers
 
 package com.ebaad.azam;
 
