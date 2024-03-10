@@ -40,6 +40,9 @@ int sum =  i+j;
 out.print("<h1>The Total Cars that have been serviced here: ");
 out.print(sum);
 out.print("</h1>");
+
+out.println("The Variable Value of the File named Sample.jsp is shown here with the help of include() method: "+ varOfSample);
+out.println("<br>");
 %>
 
 <!-- Whatever we write within expression tags will go inside the out.println() statement of the PrintWriter Class -->
