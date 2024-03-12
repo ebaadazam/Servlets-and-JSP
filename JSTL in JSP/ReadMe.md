@@ -8,6 +8,6 @@ The JSTL is part of the Java EE (Enterprise Edition) web application development
 <b>XML Tags</b>: For working with XML data, including parsing, transforming, and navigating XML documents (e.g., `<x:parse>`, `<x:forEach>`).<br>
 <b>Functions</b>: Which are used to manipulate and output data, often in conjunction with the expression language (EL), for tasks such as string manipulation, length calculation, etc.<br><br>
 
-Using JSTL and EL together enables developers to build dynamic web pages without embedding Java code directly in the JSPs. This approach adheres to the MVC (Model-View-Controller) design pattern, helping to keep business logic separate from presentation logic.<br>
+Using JSTL and EL(Expression Language) together enables developers to build dynamic web pages without embedding Java code directly in the JSPs. This approach adheres to the MVC (Model-View-Controller) design pattern, helping to keep business logic separate from presentation logic.<br>
 
 It's important to note that while JSTL can make JSP pages more manageable and can help avoid Java code in JSP pages, complex business logic should still be placed in Java classes (servlets, beans, or other classes) to keep the code clean, maintainable, and scalable.
