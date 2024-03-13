@@ -14,7 +14,7 @@
 %>
 
 <!-- This is the Expression Language. It will fetch the value of label that we had set in the Servlet Class -->
-@{label}
+The String is: ${label}
 
 </body>
 </html>
