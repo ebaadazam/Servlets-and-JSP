@@ -7,14 +7,22 @@
 <title>Insert title here</title>
 </head>
 <body>
-<%
-   // Without using the Expression Language 
-   String name = request.getAttribute("label").toString();
-   out.println(name);
-%>
-
-<!-- This is the Expression Language. It will fetch the value of label that we had set in the Servlet Class -->
-The String is: ${label}
-
+	<%
+	  // using the request object of RequestDispatcher
+	  request.setAttribute("name", "Ebaad Azam");
+	%>
+	
+	<!-- Using Expression Language to fetch the value of name variable set by using the setAttribute() method  -->
+	<h3> Name: ${name} </h3>
+	
+	<%
+	  // using the session object of HttpSession
+	  session.setAttribute("session_name", "Java Developer");
+	%>
+	<h3> Designation: ${session_name} </h3>
+	
+	<h3>0-1 Years of Experience</h3>
+	
+	<h3>Total DSA Problems Solved: ${50+20} </h3>
 </body>
 </html>
