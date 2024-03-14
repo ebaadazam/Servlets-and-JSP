@@ -1,4 +1,4 @@
-Expression language (EL) is a simplified language that is used to access and manipulate the data within JSP Pages. It provides a convenient way to access the data stored in the objects like request, session, application, Java Bean Component etc. We can also use various operators within the curly braces of EL such as arithmetic, relational, logical, conditional and empty operator.<br>
+Expression language (EL) is a simplified language that is used to access and manipulate the data within JSP Pages. It provides a convenient way to access the data stored in the objects like request, session, application, Java Bean Component etc. We can also use various operators within the curly braces of EL such as arithmetic, relational, logical, conditional and empty operator.<br><br>
 Some Implicit Objects in the Expression Language (EL) are:<br><br>
 <b>1. requestScope:</b> contains attributes that are specific to the current HTTP request<br>
 <b>2. param:</b> provides access to request parameters sent to the server<br>
