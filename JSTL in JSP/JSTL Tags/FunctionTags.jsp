@@ -24,6 +24,14 @@ Length of the String is: <c:out value="${fn:length(string)}"/><br>
 ${s}<br>
 </c:forEach>
 
+<!-- ${fn:join(array, separator)} joins an array of strings into a single string with each element separated by the specified separator -->
+<c:set var="cars" value="bmw merc audi jaguar bentley koenigsegg"/>
+<!-- Splitting the string into an array -->
+<c:set var="carsArray" value="${fn:split(cars, ' ')}"/>
+<!-- Joining the array elements with a comma -->
+<c:out value="${fn:join(carsArray, ', ')}"/>
+
+
 <!-- ${fn:indexOf(string, substring)} returns the index within string of the first occurrence of the specified substring -->
 Index of 'enthusiasts' is: ${fn:indexOf(string, 'enthusiasts')}<br>
 
